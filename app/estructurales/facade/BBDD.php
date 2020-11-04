@@ -15,7 +15,6 @@ class BBDD
     public static function getInstance(): BBDD
     {
         if (static::$instance === null) {
-            var_dump("se creo instancia");
             static::$instance = new static();
         }
 
